@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+  <h1>2048</h1>
+  <div class="container">
+    <div class="scoreAndToogle">
+      <div class="grid-scorecontainer">
+        <div class= "score">
+          <p>Best Score</p>
+          <div class="grid-scoreitem bestScore"></div>
+        </div>
+        <div class="score">
+          <p>Score</p> 
+          <div class="grid-scoreitem Score"></div>
+        </div>
+      </div>
+      <button class='toogleEmoji'>Emoji / numbers</button>
+    </div>
+    <div class="grid-4X4container">
+      <div class='gameover'>
+        <span class="gameovertext"></span></br>
+        <button class='gamebutton' onclick="startAgain()">Try Again</button>
+      </div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+    </div>
+    <table>
+      <tr>
+        <th>Rank</th> 
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td class='leaderboard'>-</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td class='leaderboard'>-</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td class='leaderboard'>-</td>
+      </tr>
+    </table>
+  </div>
+  <div class="grid-Govercntainer">
+    <div class="grid-Goveritem">Try to get 2048</div>
+  </div>
+  <script src="./2048/helper.js"></script>
+  <script src="./2048/grid.js"></script>
+  <script src="./2048/app.js"></script>
+</body>
+</html>

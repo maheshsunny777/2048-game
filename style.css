@@ -1,0 +1,140 @@
+*{
+    font-family:Helvetica;
+    color:#f4f4f4;
+}
+body{
+    margin:0;
+    padding:0;
+    background-image: url("/images/background.png");
+    background-repeat: no-repeat;
+    background-color: #25394d;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 2048;
+    height: 1152;
+}
+h1{
+    text-align: center;
+    text-decoration-color: slategray;
+    text-decoration-style: solid;
+}
+.container{
+    width:70%;
+    margin:0 auto;
+    display: flex;
+}
+.scoreAndToogle{
+    display: block;
+    width: 23%;
+    max-width:220px;
+}
+.grid-4X4container{
+    position: relative;
+    overflow:hidden;
+    width:40%;
+    max-width: 390px;
+    height: 350px;
+    margin:0 auto;
+    align-self: center;
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #25394d;
+    padding: 10px;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+.gameover{
+    position: absolute;
+    top:-350px;
+    background-color:black;
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 130px 0px;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 40px;
+}
+table{
+    background-color: #25394d;
+    border: 2px solid #25394d;
+    text-align: center;
+    padding: 20px;
+    width: 22%;
+    max-width:220px;
+    height: 136px;
+    border-radius: 3px;
+}
+.score{
+    text-align: center;
+    width: 90px;
+
+}
+.grid-scorecontainer{
+    width:89%;
+    border-radius: 7px;
+    overflow: hidden;
+    display: inline-grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    background-color: #25394d;
+    padding: 10px;
+    column-gap: 5px;
+    row-gap: 5px;
+
+}
+
+.tile {
+    height: 37px;
+    width:42px;
+    background-color: #ffffffcc;
+    color: #25394d;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 3px;
+}
+.grid-scoreitem {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 3px;
+    width:50px;
+    height: 25px;
+    font-size: 25px;
+    color: #25394d;
+  }
+
+.grid-Govercontainer {
+    display: inline-grid;
+    padding: 10px;
+    column-gap: 0px;
+    row-gap: 0px;
+   
+  }
+
+.grid-Goveritem {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.gamebutton{
+    padding:10px 30px;
+    background-color: #25394d;
+    border: none;
+    cursor: pointer;
+}
+.toogleEmoji{
+    width:100%;
+    padding:10px 30px;
+    background-color: #25394d;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+}
